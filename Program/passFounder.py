@@ -11,14 +11,14 @@
 
 import random
 
-def Founder():
+def passKeyGen():
     passW = ""
     for i in range(0, 16):
         tmp = random.randint(0, 4)
         if tmp == 1:
             txt = random.randint(0, len(txt_Lower))
             passW = passW + (txt_Lower[txt])
-            print(passW)
+           #print(passW)
         if tmp == 2:
             txt = random.randint(0, len(txt_Upper))
             passW = passW + (txt_Upper[txt])
@@ -26,11 +26,11 @@ def Founder():
         if tmp == 3:
             txt = random.randint(0, len(txt_Int))
             passW = passW + (txt_Int[txt])
-            print(passW)
+            #print(passW)
         if tmp == 4:
             txt = random.randint(0, len(txt_Symbol))
             passW = passW + (txt_Symbol[txt])
-            print(passW)
+            #print(passW)
     print("Your password is",passW)
 
 
@@ -42,7 +42,7 @@ tmp = 0
 txt = 0
 
 
-Founder()
+passKeyGen()
 
 
 
