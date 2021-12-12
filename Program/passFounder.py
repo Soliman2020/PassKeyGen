@@ -8,7 +8,7 @@ def passKeyGen():
     Author:      MegaByte
     Editor:      Soliman2020
     Created:     07/12/2021
-    Updated:     09/12/2021
+    Updated:     12/12/2021
     Copyright:   (c) MegaByte 2021
     Licence:     <your licence>
     '''
@@ -40,3 +40,11 @@ tmp = 0
 index = 0
 
 passKeyGen()
+
+
+create_new_pw='y'
+while create_new_pw=='y':
+    passKeyGen()
+    create_new_pw = input("\nWould you like to get a new password? (y or n) ")
+    
+    
